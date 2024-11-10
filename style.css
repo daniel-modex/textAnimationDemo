@@ -1,0 +1,47 @@
+body,html{
+overflow: hidden;
+}
+
+.container{
+    background-image: url("pexels-instawally-176851.jpg");
+    width: 99vw;
+    height: 98vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    animation: backanime 4s ease-in-out 1  forwards ;
+    
+}
+
+@keyframes backanime {
+    To{
+        background-position: 15%;
+    }
+}
+
+svg path{
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 0.5;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: textAnime 5s ease-in-out 1 forwards;
+}
+
+@keyframes textAnime {
+    0%{
+        stroke-dashoffset: 800;
+    }
+    75%{
+        fill: transparent;
+    }
+    100%{
+        fill: #ffffff;
+        stroke-dashoffset: 0;
+    }
+}
